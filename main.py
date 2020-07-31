@@ -71,7 +71,8 @@ if args.numerar :
 
 if args.relacionar:
     relacionar_requerimentos(documentos)
-elif args.relacionar2:
+
+if args.relacionar2:
     relacionar_requerimentos2(documentos)
 
 
