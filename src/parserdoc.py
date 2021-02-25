@@ -99,7 +99,7 @@ def parse_requerimento(filename):
                 dia, mes, ano = get_LongDate(text)
 
                 documento = {
-                    'tipo' : tipo,
+                    'tipo' : tipo or "Requerimento",
                     'nro' : nro,
                     'ano' : ano,
                     "autor" : autor,
