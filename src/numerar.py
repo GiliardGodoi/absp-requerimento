@@ -91,5 +91,10 @@ def ordenar(documentos, attr_name="nro"):
     for doc in documentos:
         if "nro" not in doc:
             pprint(doc)
+        try:
+            doc['nro'] = int(doc['nro'])
+        except Exception as error:
+            print(error)
+            print(doc)
 
     return sorted(documentos, key=lambda item: item['nro'])
