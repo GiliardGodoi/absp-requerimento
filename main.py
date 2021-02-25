@@ -5,7 +5,7 @@ import json
 import os
 from datetime import datetime
 
-from src.numerar import numerar_requerimentos
+from src.numerar import numerar_requerimentos, ordenar
 from src.parserdoc import parse_requerimento
 from src.persistencia import read_excel, read_json, to_excel, to_json
 from src.util import eh_requerimento_vereador, number2Month
@@ -32,6 +32,8 @@ parser.add_argument("--relacionar", action='store_true',
                     help="Relaciona os documentos em um arquivo Word")
 parser.add_argument("--relacionar2", action='store_true',
                     help="Outra opção para numerar requerimentos")
+parser.add_argument("--ordenar",    action='store_true',
+                    help="Ordena novamente os arquivos")
 
 args = parser.parse_args()
 
@@ -68,6 +70,10 @@ elif args.excel :
 
 if args.numerar :
     documentos = numerar_requerimentos(documentos)
+
+if args.ordenar :
+
+    documentos = ordenar(documentos)
 
 if args.relacionar:
     relacionar_requerimentos(documentos)
