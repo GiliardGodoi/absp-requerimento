@@ -36,8 +36,7 @@ requerimentos_modelo = set([
     "Edson.docx",
     "Flávio.docx",
     "Flavio.docx",
-    "Genivaldo.docx",
-    "Jefferson.docx",
+    "Francielle.docx",
     "José Jaime.docx",
     "Jose Jaime.docx",
     "JoséJaime.docx",
@@ -46,7 +45,8 @@ requerimentos_modelo = set([
     "Mirian.docx",
     "Odemir.docx",
     "Rudinei.docx",
-    "Todos.docx"
+    "Todos.docx",
+    "Luciano e Eduardo.docx"
 ])
 
 # https://stackoverflow.com/questions/15008758/parsing-boolean-values-with-argparse
