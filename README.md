@@ -6,22 +6,28 @@ Automatizando tarefas simples que devem ser executadas todas as semanas.
 
 Para criar o arquivo `requerimentos.json`.
 
-´´´python
+```python
 python main.py -d 18
-´´´
+```
 
-Para criar a relação de requerimentos em arquivo `.docx`.
+Para criar a relação de requerimentos em arquivo `.docx` use a opção --relacionar
+
+```python
+python main.py -d 18 --numerar --relacionar
+```
 
 Se já tiver sido criado o arquivo `requerimentos.json`.
-´´´python
+```python
 python main.py -d 18 --json --numerar --relacionar
-´´´
+```
 
 ## Ajuda
 
 Descrição da ajuda fornecida por padrão.
 
 ```cmd
+python main.py --help
+
 usage: main.py [-h] [-A ANO] [-M MES] -d DIA [--numerar] [--excel] [--json]
                [--relacionar] [--relacionar2]
 
@@ -65,4 +71,4 @@ optional arguments:
 
 ## Autor
 
-Desenvolvido nas horas vagas por Giliard Godoi <https://github.com/GiliardGodoi/>
+Desenvolvido nas horas vagas por [Giliard Godoi](https://github.com/GiliardGodoi/)
